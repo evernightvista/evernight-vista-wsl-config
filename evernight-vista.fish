@@ -20,7 +20,7 @@ function fish_greeting
     set red (set_color red)
     set reset (set_color normal)
 
-    set greeting "Evernight Vista $sysver ($codename) $arch"
+    set greeting "Evernight Vista $sysver ($codename) WSL Edition $arch"
     if test $is_root -eq 1
         set greeting "$greeting $red(as root)$reset"
     end
@@ -49,7 +49,7 @@ function ver
     set red (set_color red)
     set reset (set_color normal)
 
-    set greeting "Evernight Vista $sysver ($codename) $arch"
+    set greeting "Evernight Vista $sysver ($codename) WSL Edition $arch"
     if test $is_root -eq 1
         set greeting "$greeting $red(as root)$reset"
     end
@@ -65,4 +65,3 @@ alias cmd="fish"
 alias sudo="sudo-rs"
 alias su="su-rs"
 alias visudo="visudo-rs"
-alias update-grub="grub2-mkconfig -o /boot/grub2/grub.cfg"
